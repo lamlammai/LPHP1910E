@@ -1,0 +1,108 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+/* overflow */
+div.content{
+	width: 300px;
+	height: 50px;
+	border: 2px solid red;
+	/* overflow: hidden; an noi dung  */
+	/* overflow: scroll; hien thi ca thanh ngang a doc */
+	/* overflow: auto; */
+	overflow-y: scroll; 
+
+}
+/* css3 ho tro chay tren da nen tang */
+div.box{
+	width: 980px;
+	min-height: 500px;
+	margin: auto;
+}
+div.box div.child1{
+	width: 50%;
+	height: 500px;
+	background-color: green;
+	float: left;
+}
+div.box div.child2{
+	width: 50%;
+	height: 500px;
+	background-color: blue;
+	float: left;
+}
+/* /* reponsive/ */
+@media only screen and (min-width: 360px) and (max-width: 736px){
+	/* overide lai code css ben ngoai */
+	div.box div.child1{
+		width: 100%;
+		float: none;
+		color: blue;
+	}
+	div.box div.child1 img{
+		display: none;
+	}
+	div.box div.child2{
+		width: 100%;
+		float: none;
+		color: green;
+	}
+}
+div.box2{
+	/* background-color: pink; */
+	width: 300px;
+	height: 300px;
+	/* background: linear-gradient(to top left, pink, yellow, blue); */
+	/* -webkit-:  chrome, safari
+		-moz-:  firefox;
+		-o-: opera;
+		-ms-: microsoft browser;
+	; */
+	background:	-webkit-linear-gradient(45deg, pink, yellow, orange);
+	background: linear-gradient(45deg, pink, yellow, orange);
+	/* di chuyen phan tu */
+	/* -webkit-transform: translate(50px, 50px); */
+	/* transform: translate(50px, 50px); */
+	/* xoay phan tu */
+	/* transform: rotate(75deg); */
+	/* keo gian phan tu */
+	/* transform: scale(1,2); */
+	/* width x 1, height x2 */
+	/* be goc do chieu rong chieu cao */
+	/* transform: skew(10deg, 10deg); */
+
+	transition: all 10s ease-in 0s;
+	animation: myAnimation 3s ease 0s infinite alternate;
+	position: relative;
+}
+@keyframes myAnimation{
+	from {
+		top: 0px;
+	}
+	to{
+		top: 200px;
+	}
+}
+div.box2:hover{
+	transform: rotate(75deg);
+	/* border-radius: 50%;
+	opacity: 0; */
+}
+div.box-3{
+	width: 200px;
+	height: 300px;
+	border: 2px solid red;
+	margin: auto;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+div.box-3 p{
+	margin: 3px 3px;
+	overflow: hidden;
+	white-space: nowrap; /* dieu khien khoang trang khii xuong dong: ;*/
+	text-overflow: ellipsis;
+	/* word-wrap:  ; */
+}
+/* TRANSITION hieu ung chuyen dong */

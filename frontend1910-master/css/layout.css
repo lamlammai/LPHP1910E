@@ -1,0 +1,94 @@
+/*commentcss*/
+/*reset trinh duyet*/
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+body{
+	font-family: 'tahoma';
+	font-size: 14px;
+	height: 100%;
+}
+header{
+	width: 100%;
+	height: 100px;
+	background-color: pink;
+}
+header div.logo{
+	width: 30%;
+	height: 100px;
+	background-color: gray;
+	float: left;
+}
+header div.banner{
+	width: 70%;
+	height: 100px;
+	background-color: silver;
+	float: left;
+}
+header h1, header h2{
+	text-align: center;
+	line-height: 100px;
+}
+nav{
+	width: 100%;
+	height: 45px;
+	background-color: pink;
+}
+div.container{
+	width: 900px;
+	margin: auto;
+}
+nav ul{
+	text-align: center;
+
+}
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	line-height: 40px;
+	padding: 0px 20px;
+}
+nav ul li a{
+	text-decoration: none;
+}
+main{
+	background-color: #a05b91;
+	width: 100%;
+	min-height: 450px;
+	text-align: center;
+}
+main section.content-left{
+	float: left;
+	width: 70%;
+	height: 450px;
+	background-color: violet;
+}
+ main aside.content-right{
+	float:right;
+	width: 30%;
+	height:450px;
+	background-color: yellow;					
+}
+main section.content-left section.content-top{
+	width: 100%;
+	height: 50%;
+	background-color: blue;
+
+}
+main section.content-left article.content-bottom{
+	width: 100%;
+	height: 50%;
+	background-color: green;
+}
+footer{
+	width: 100%;
+	height: 50px;
+	background-color: #6fc4be;
+}
+footer h4{
+	color: white;
+	text-align: center;
+	line-height: 40px;
+}

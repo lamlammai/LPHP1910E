@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Den giao thong</title>
+	<link rel="stylesheet" href="">
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			border: 0;
+		}
+		.container{
+			width: 50px;
+			background-color: black;
+			padding:5px;
+			margin:auto;
+		}
+		.container .time{
+			text-align: center;
+			margin: 5px 0px;
+			color: white;
+		}
+		.container .green{
+			width:100% ;
+			height: 50px;
+			background-color: grey;
+			border-radius: 50%;
+		}
+		.container .red{
+			width: 100%;
+			height: 50px;
+			background-color: grey;
+			border-radius: 50%;
+		}
+		.container .yellow{
+			width: 100%;
+			height: 50px;
+			background-color: grey;
+			border-radius: 50%;
+		}
+		.control{
+			width: 150px;
+			margin: 10px auto;
+		}
+		.control >button{
+			background-color: pink;
+			padding:  5px 8px;
+			border-radius: 5px;color: white;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h4 class="time">0</h4>
+		<div class="green traffic" id="green"></div>
+		<div class="red traffic" id="red"></div>
+		<div class="yellow traffic" id=" yellow"></div>
+	</div>
+	<div class="control">
+		<button class="btn first" id="xanh">Xanh</button>
+		<button class="btn first" id="do">Do</button>
+		<button class="btn first" id="vang">Vang</button>
+	</div>
+	<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+	<script type="text/javascript" src="js/den-giao-thong.js"></script>
+</body>
+</html>

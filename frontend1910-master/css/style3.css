@@ -1,0 +1,113 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/* cac thuoc tinh lam viec voi van ban tieu de */
+body{
+	font-family: 'tahoma';
+}
+p.title{
+	font-style: italic;
+	font-variant: small-caps;
+	font-weight: bold;
+	font-size: 50px;
+	color: pink;
+	/* direction: rtl; */
+	letter-spacing: 5px; /* khoang cach giuwa cac chu trong 1 tu */
+	word-spacing: 5px; /* khoang cah giua cac tu trong cau */
+	text-indent: 6px; /* thut dau dong */
+	text-align: center; /* can chinh van ban */
+	text-decoration: underline; /* tao dau gach chan o tren gua van ban */
+	text-transform: capitalize ; /* chuyen van ban chu hoa chu thuong */
+	white-space: normal; 
+}
+h4.myclass{
+	text-shadow: black 3px 7px 3px; /* do bong trong van ban */
+}
+/* thuoc tinh va gia tri dinh dang nen */
+div.box{
+	width: 300px;
+	height: 300px;
+	background-color: #e261dc;
+	background-image: url('../images/icon.png'); /* anh nen */
+	 background-repeat: no-repeat; /* hinh anh khong dc lap lai  */
+	/* background-repeat: repeat-x; /* lap theo chieu ngang */ 
+	/* background-repeat: repeat-y; /* lap theo chieu doc */ 
+	/* background-position: bottom center; /* dieu kien vi tri cua nen */
+	  background-attachment: fixed; 
+	/* background-size: cover; */
+	/* background-size: 100% 100%; dieu khien kich thuco hinh nen */
+}
+/* duong vien trong css */
+div.box2{
+	height: 300px;
+	width: 300px;
+	/* border: 1px solid red; */
+	border-top: 4px dotted red;
+	border-right: 2px solid pink;
+	border-left: 4px inset yellow;
+	border-bottom: 3px groove violet;
+	margin-top:30px ; /* cach leen tren tinh tu noi dung duong vien */
+	/* padding-top: 30px; */
+}
+/* le va vung dem  padding and margin*/
+div.box2 p.content{
+	/* margin-top: 30px; */
+	/*margin: 30px; */ /* tac dong ca 4 phia */	
+	background-color: yellow;
+	margin: 30px 10px; /* margin:  top right; bottom lay doi xung voi top right dx left */
+
+}
+/* display trong css */
+div.box3 a{
+	display: block;
+}
+div.container {
+	width: 300px;
+	height: 300px;
+	border: 2px solid red;
+	display: inline-block; /* giu nguyen dc dac tinh ban dau */ 
+}
+div.container a{
+	display: list-item;
+}
+div.box4{
+	width: 980px;
+	height: 300px;
+	border: 2px solid red;
+}
+div.child1, div.child2, div.child3{
+	width: 300px;
+	height: 300px;
+	float: left; 
+}
+div.child1{ 
+	background-color: yellow;
+ }
+div.child2{ 
+	background-color: blue;
+ }
+div.child3{ 
+	background-color: green;
+ }
+ .clear{
+	clear: both; /* ca child 4 va child 5 khong bi flaot anh huong nua */
+}
+div.child4{
+	width: 300px;
+	height: 300px;
+	background-color: violet;
+	/* clear: both; xoa su keo theo ca ve ben trai va phai */
+}
+div.child4{
+	width: 300px;
+	height: 300px;
+	background-color: yellowgreen;
+}
+div.box5{
+	width: 500px;
+	height: 200px;
+	background: orange;
+	overflow: scroll;
+	float: left;
+}

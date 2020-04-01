@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>learning bootstrap</title>
+<link rel="stylesheet" href="css/bootstrap.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<style type="text/css">
+	.byNavbar{
+		background-color: pink !important;
+	}
+	body{
+		padding-top: 50px;
+	}
+	table >tbody> tr:hover{
+		background-color: yellow !important;
+	}
+	table>thead:hover{
+		background-color: blue !important;
+	}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark bg-primary byNavbar fixed-top" >
+  <a class="navbar-brand" href="#">Logo</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Trang chu <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<div class="container">
+<div class="row">
+<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 bg-danger py-5" >
+	<p class="text-dark">col-12 col-sm-12 col-md-6 col-lg-4</p> 
+</div>
+<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 bg-dark py-5" >
+	<p class="text-hide">col-12 col-sm-12 col-md-6 col-lg-4</p> 
+</div>
+<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 bg-primary py-5" >
+	<p class="text-justify">col-12 col-sm-12 col-md-6 col-lg-4 </p>
+</div>
+</div>
+<div class="row mt-3">
+<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 bg-success py-5 offset-lg-3">
+	
+</div>
+</div>
+<!-- <div class="row">
+<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" > -->
+	
+<!-- </div>
+</div> -->
+</div>
+<div class="container">
+	<table class="table table-bordered mt-3 table-striped table-hover">
+  <thead class="table-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+<div class="row">
+	<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+		<img src="images/kit.png" alt="" class="img-fluid img-thumbnail">
+	</div>
+</div>
+</div>
+<div class="container">
+	<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+		<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item active" aria-current="page">Home</li>
+  </ol>
+</nav>
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Library</li>
+  </ol>
+</nav>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Library</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Data</li>
+  </ol>
+</nav>
+	</div>
+</div>
+<div class="container mt-3 bg-info">
+			<div class="row mt-3" >
+				<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 bg-success" style="height: 300px;">
+					<!-- <div > -->
+						<div class="row">
+							<div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 bg-warning">1</div>
+					<!-- <div class="row"> -->
+						<div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 bg-danger">2</div>
+					<!-- </div> -->
+					<!-- <div class="row"> -->
+						<div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 bg-dark">3</div>
+						</div>
+						
+					<!-- </div> -->
+			</div>
+		</div>
+	</div>
+<!--  -->
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-dark">Dark</button>
+<button type="button" class="btn btn-link">Link</button>
+<!--  -->
+<div class=" bg-success">
+<div class= btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+  <div class="btn-group mr-2" role="group" aria-label="First group">
+    <button type="button" class="btn btn-secondary">1</button>
+    <button type="button" class="btn btn-secondary">2</button>
+    <button type="button" class="btn btn-secondary">3</button>
+    <button type="button" class="btn btn-secondary">4</button>
+  </div>
+  <div class="btn-group mr-2" role="group" aria-label="Second group">
+    <button type="button" class="btn btn-secondary">5</button>
+    <button type="button" class="btn btn-secondary">6</button>
+    <button type="button" class="btn btn-secondary">7</button>
+  </div>
+  <div class="btn-group" role="group" aria-label="Third group">
+    <button type="button" class="btn btn-secondary">8</button>
+  </div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,196 @@
+/*css selector ket hop*/
+/*lien ke dung dang truoc*/
+/* h1 + p{
+	color: red; 
+} */
+/* tim the truoc sau */
+/* h1~p{
+	color:blue;
+} */
+/*the cha con*/
+div.child-1 > p{
+	color:green;
+}
+div.child-1> h3{
+	color:green;
+}
+/*the trong ngoai*/
+div.parent h3{
+	color: yellow;
+}
+/*gom nhom selector*/
+div.child-1>p, div.child-1>h3{
+	color: pink;
+}
+div.box > div.box-2 + div.box-3 > div.box4 div.box-5~div.box-6 h5{
+	color:blue;
+}
+section.box>section.box2>input[class$='abc']+p.text~h5.tile input[type='email']{
+	border:1px solid red;
+}
+/*pseudo class seclector*/
+/*bo tro cho html tao hieu ung*/
+/* css phan tu dau tien */
+div.content :first-child{
+	color: blue;
+}
+/* nhung loai phan tu dau tien */
+div.content :first-of-type{
+	color: red;
+}
+/* cuoi  */
+div.content :last-child{
+	color: pink;
+}
+div.content :last-of-type{
+	color: violet;
+}
+div.content :nth-last-child(3){
+	color: orange;
+}
+div.content :nth-last-of-type(3){
+	color: yellow;
+}
+/* thang con dau tien dem xuong */
+div.content :nth-child(2){
+	color: brown;
+}
+/* nhung loai con dau tien dem xuong */
+div.content :nth-of-type(2){
+	color: silver;
+}
+/* trong thanh phan chi co duy nhat 1 thang con */
+div.container :only-child{
+	color: red;
+}
+/* con tro chuot nhap nhay */
+div.container-fluid input[class='user']:focus{
+	width: 500px;
+	height: 30px;
+	border: 1px solid red;
+}
+div.container-fluid input[name='gender']:checked{
+	width: 120px;
+	height: 120px;
+	border: 5px solid red;
+}
+div.container-fluid input[class='check']:checked{
+	width: 100px;
+	height: 100px;
+}
+/* dinh nghia style cho link */
+/* kich hoat link */
+div.container-fluid a:active{
+	color: yellow;
+}
+/* link chua vao lan nao */
+div.container-fluid a:visited{
+	color: violet;
+}
+/* link da dc ghe tham */
+div.container-fluid a:link{
+	color: red;
+}
+div.container-fluid:hover{
+	width: 100px;
+	height: 100px;
+	background: pink;
+}
+/* tac dong vao ky tu dau tien cua van ban */
+div.pseudo-element p.caption::first-letter{
+	font-size: 25px;
+	color: red;
+}
+/* tac dong vao dong dau tien */
+div.pseudo-element p.caption::first-line{
+	color: blue;
+}
+/* them vao trc thuoc tinh */
+div.pseudo-element p.caption::before{
+	/* content: "LPHP1910E ";/* chen text */
+	content: url('../images/icon.png');
+}
+/* tao hieu ung khi boi den */
+div.pseudo-element p.caption::selection{
+	color: yellow;	
+}
+div.font p.font-family{
+	font-family: 'Calistoga', cursive;
+	color: violet;
+}
+div.font p.font-style{
+	font-style: oblique;
+}
+div.font p.font-variant{
+	font-variant: small-caps;
+}
+div.font p.font-weight{
+	font-weight: 600
+}
+div.font p.font-size{
+	font-size: 50px;
+}
+div.thuoctinh p.color{
+	color: pink;
+	background: violet;
+	height: 100px;
+	width: 300px;
+}
+div.thuoctinh p.direction{
+	direction: rtl; /* thiet lap tu phai qua trai  */
+	color: yellow;
+	background: violet;
+	height: 50px;
+	width: 300px;
+}
+div.thuoctinh p.letter-spacing{
+	letter-spacing: 5px;
+	color: pink;
+	background: violet;
+	height: 100px;
+	width: 300px;
+}
+div.thuoctinh p.word-spacing{
+	word-spacing: 5px;
+	color: yellow;
+}
+div.thuoctinh p.indent{
+	text-indent: 10%;
+}
+div.thuoctinh p.align{
+	text-align: center;
+}
+div.thuoctinh p.decoration{
+	text-decoration: underline; /*none, o erline, line-through,blink */
+}
+div.thuoctinh p.transform{
+	text-transform: /* none uppercase lowercase  */capitalize;
+}
+div.thuoctinh p.white-scape{
+	white-space: nowrap;
+}
+div.thuoctinh p.shadow{
+	text-shadow: red 2px 2px 5px;
+}
+div.background h1.background-color{
+	background-color: greenyellow;
+	color: white;
+	font-size: 50px;
+	width: 100%;
+	height: 60px;
+}
+div.background h1.background-images{
+	background-image: url('../images/icon.png');
+}
+div.background h1.background-repeat{
+	background-image: url('../images/icon.png');
+	background-repeat: no-repeat;
+}
+div.background h1.background-position{
+	background-image: url('../images/icon.png');
+	background-position: left;
+	height: 100px;
+}
+div.boder h2{
+	border: 2px solid red;
+}

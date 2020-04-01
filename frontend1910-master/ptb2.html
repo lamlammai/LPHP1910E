@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Giao phuong trinh bac 2</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<style type="text/css">
+		p{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-sm-12 col-md-6 offset-md-3 col-lg-6 offset-lg-3">
+				<form class="border p-3 m-3">
+					<div class="form-group">
+						<label for="a">Nhap he so a:</label>
+						<input type="text" placeholder="Nhap he so a"  id="a">
+						<p id="noti-a"></p>
+						<label for="a">Nhap he so b:</label>
+						<input type="text" placeholder="Nhap he so b" id="b">
+						<p id="noti-b"></p>
+						<label for="a">Nhap he so c:</label>
+						<input type="text" placeholder="Nhap he so c" id="c">
+						<p id="noti-c"></p>
+						
+					</div>
+						<button class="btn btn-primary"type="button" id="result">Ket Qua</button>
+						<button class="btn btn-primary"type="reset" id='reset'>Reset</button>
+						<h4 class="result"></h4>	
+					
+				</form>
+			</div>
+		</div>
+	</div>
+	
+
+	<script type="text/javascript">
+		let result=document.getElementById('result');
+		result.addEventListener('click', function(){
+			let a = document.getElementById('a').value;
+			let b = document.getElementById('b').value;
+			let c = document.getElementById('c').value;
+			let check_a = false, check_b = false, check_c = false;
+			if(isNaN(a)||a ===''){
+				document.getElementById('noti-a').innerHTML='vui long nhap so!';
+				document.getElementById('a').style.border='1px solid red';
+				check_a = false;
+			}
+			else{
+				document.getElementById('noti-a').innerHTML='';
+				document.getElementById('a').style.border='1px solid #cccccc';
+				check_a = true;
+			}
+			if(isNaN(b)||b ===''){
+				document.getElementById('noti-b').innerHTML='vui long nhap so!';
+				document.getElementById('b').style.border='1px solid red';
+				check_b = false;
+			}
+			else{
+				document.getElementById('noti-b').innerHTML='';
+				document.getElementById('b').style.border='1px solid #cccccc';
+				check_b = true;
+			}
+			if(isNaN(c) || c===''){
+				document.getElementById('noti-c').innerHTML='vui long nhap so!';
+				document.getElementById('c').style.border='1px solid red';
+				check_c= false;
+			}
+			else{
+				document.getElementById('noti-c').innerHTML='';
+				document.getElementById('c').style.border='1px solid #cccccc';
+				check_c = true;
+			}
+			if(check_a===true&&check_b===true&&check_c===true){
+				giaipt(a,b,c);
+			}
+			function giaipt(a,b,c){
+				
+				if(a==0){
+					if(b==0){
+						if(c==0){
+							document.getElementsByClassName('result')[0].innerHTML=`Phuong trinh vo so nghiem `;
+						}else{
+							document.getElementsByClassName('result')[0].innerHTML=`Phuong trinh co nghiem x=0 `;
+						}
+					}else{
+						document.getElementsByClassName('result')[0].innerHTML=`Phuong trinh co nghiem x= ${-c/b}`;
+					}
+				}else{
+					let denta=b*b-4*a*c;
+					if (denta>0) {
+						document.getElementsByClassName('result')[0].innerHTML=`Phuong trinh co nghiem x1=${((-b+Math.sqrt(denta))/(2*a)).toFixed(2)} x2=${((-b-Math.sqrt(denta))/(2*a)).toFixed(2)}`;
+					}
+					else if(denta==0){
+						document.getElementsByClassName('result')[0].innerHTML=`Phuong trinh co nghiem x=${-b/(2*a)}`;
+					}
+					else {
+						document.getElementsByClassName('result')[0].innerHTML=`Phuong trinh vo nghiem`;
+					}
+				}	
+			}
+		});
+		let reset=document.getElementById('reset');
+		reset.addEventListener('click', function(){
+			document.getElementById('a').style.border="1px solid #cccccc";
+			document.getElementById('b').style.border="1px solid #cccccc";
+			document.getElementById('c').style.border="1px solid #cccccc";
+			document.getElementById('noti-a').innerHTML='';
+			document.getElementById('noti-b').innerHTML='';
+			document.getElementById('noti-c').innerHTML='';
+			document.getElementsByClassName('result')[0].innerHTML='';
+		});
+	</script>
+</body>
+</html>

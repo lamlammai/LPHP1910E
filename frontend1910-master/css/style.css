@@ -1,0 +1,42 @@
+/*HTML selector lay ten the lam selector*/
+h1{
+	color:red;
+
+}
+/*class selector*/
+.title{
+	color: blue;
+}
+/*id selector*/
+#my-title{
+	color: green;
+}
+input[name='user']{
+	border: 1px solid red;
+}
+input[type]{
+	border: 1px solid blue;
+}
+input[class='pass pass2']{
+	border: 1px solid pink;
+
+}
+input[class~='pass']{
+	border: 1px solid yellow;
+
+}input[class~='pass2']{
+	border: 1px solid yellow;
+
+}
+input[class*='pas']{
+	border:1px solid violet;
+}
+input[class^='pa']{
+	border: 2px solid orange;
+}
+input[class$='k']{
+	border: 2px solid brown;
+}
+input[value|='text']{
+	border: 2px solid tomato;
+}
